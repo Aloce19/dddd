@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/street"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_rectangle"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginStart="65dp"
+        android:background="@drawable/priam"
+        android:alpha="0.4"/>
+    <ImageView
+        android:layout_width="109dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logo_home" />
+
+    <ImageButton
+        android:id="@+id/bt_one"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginStart="75dp"
+        android:background="@drawable/btn_one"
+        android:onClick="onPINClick"/>
+    <ImageButton
+        android:id="@+id/bt_two"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginStart="175dp"
+        android:background="@drawable/btn_two"
+        android:onClick="onPINClick"/>
+    <ImageButton
+        android:id="@+id/bt_three"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginStart="275dp"
+        android:background="@drawable/btn_three"
+        android:onClick="onPINClick"/>
+    <ImageButton
+        android:id="@+id/bt_four"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginStart="75dp"
+        android:background="@drawable/btn_four"
+        android:onClick="onPINClick"/>
+    <ImageButton
+        android:id="@+id/bt_five"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginStart="175dp"
+        android:background="@drawable/btn_five"
+        android:onClick="onPINClick"/>
+    <ImageButton
+        android:id="@+id/bt_six"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginStart="275dp"
+        android:background="@drawable/btn_six"
+        android:onClick="onPINClick"/>
+    <ImageButton
+        android:id="@+id/bt_seven"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginStart="75dp"
+        android:background="@drawable/btn_seven"
+        android:onClick="onPINClick"/>
+    <ImageButton
+        android:id="@+id/bt_eight"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginStart="175dp"
+        android:background="@drawable/btn_eight"
+        android:onClick="onPINClick"/>
+    <ImageButton
+        android:id="@+id/bt_nine"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginStart="275dp"
+        android:background="@drawable/btn_nine"
+        android:onClick="onPINClick"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создайте пин-код"
+        android:layout_marginTop="200dp"
+        android:textSize="20sp"
+        android:layout_marginStart="120dp"
+        />
+
+
+
+</FrameLayout>

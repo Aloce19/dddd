@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/street"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_rectangle"/>
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginStart="65dp"
+        android:background="@drawable/priam"
+        android:alpha="0.7"/>
+
+    <ImageView
+        android:layout_width="109dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/logo_home" />
+
+    <ImageButton
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginStart="95dp"
+        android:background="@drawable/btn_autorezetion"
+        android:onClick="Vhod_autorez"/>
+
+    <ImageButton
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginStart="95dp"
+        android:background="@drawable/btn_vhod"
+        android:onClick="Reg_Auto"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Электронная почта"
+        android:textColor="@color/grey"
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пароль"
+        android:textColor="@color/grey"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="80dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/Vhod"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginStart="95dp"
+        android:visibility="invisible"
+        android:onClick="Vhod_autorez"/>
+
+    <Button
+        android:id="@+id/Registretade"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginStart="95dp"
+        android:visibility="invisible"
+        android:onClick="Reg_Auto"/>
+
+    <EditText
+        android:id="@+id/email_auto"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="288dp"
+        android:layout_marginStart="72dp"/>
+
+    <EditText
+        android:id="@+id/password_auto"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="368dp"
+        android:layout_marginStart="72dp"
+        android:maxLines="6"/>
+
+</FrameLayout>

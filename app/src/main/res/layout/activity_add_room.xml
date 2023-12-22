@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRoomActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/dark_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btnBack1"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_circle_blue"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/arrow_prev_small_svgrepo_com"/>
+            <TextView
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Добавить"
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/nameRoom1"
+                android:paddingStart="10dp"
+                android:background="@drawable/edittext_round"
+                android:hint="Название коматы"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:textSize="18dp"/>
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выберите комнату"
+                android:textColor="@color/gray"
+                android:textSize="18dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <GridLayout
+                    android:layout_weight="1"
+                    android:columnCount="3"
+                    android:rowCount="2"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical"
+                        android:id="@+id/l1"
+                        android:onClick="onRoomSelect"
+                        android:layout_columnWeight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:background="@drawable/button_circle_blue"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:id="@+id/img1"
+                            android:onClick="onRoomSelect"
+
+                            android:padding="15dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_6"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/txt1"
+                            android:layout_height="wrap_content"
+                            android:text="Гостиная"
+                            android:layout_gravity="center"
+                            android:textColor="@color/blue"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical"
+                        android:onClick="onRoomSelect"
+                        android:id="@+id/l2"
+                        android:layout_columnWeight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:background="@drawable/button_circle_gray"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:id="@+id/img2"
+
+                            android:padding="15dp"
+                            android:onClick="onRoomSelect"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_12"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/txt2"
+                            android:layout_height="wrap_content"
+                            android:text="Кухня"
+                            android:layout_gravity="center"
+                            android:textColor="@color/gray"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_gravity="end"
+                        android:orientation="vertical"
+                        android:layout_columnWeight="1"
+                        android:id="@+id/l3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:background="@drawable/button_circle_gray"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:id="@+id/img3"
+                            android:onClick="onRoomSelect"
+
+                            android:padding="15dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_8"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ваная"
+                            android:id="@+id/txt3"
+                            android:layout_gravity="center"
+                            android:textColor="@color/gray"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:onClick="onRoomSelect"
+                        android:id="@+id/l4"
+                        android:orientation="vertical"
+                        android:layout_columnWeight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:background="@drawable/button_circle_gray"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="15dp"
+                            android:onClick="onRoomSelect"
+                            android:id="@+id/img4"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_9"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Кабинет"
+                            android:id="@+id/txt4"
+                            android:layout_gravity="center"
+                            android:textColor="@color/gray"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical"
+                        android:onClick="onRoomSelect"
+                        android:layout_columnWeight="1"
+                        android:id="@+id/l5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:background="@drawable/button_circle_gray"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="15dp"
+                            android:id="@+id/img5"
+                            android:onClick="onRoomSelect"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_11"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Спальня"
+                            android:id="@+id/txt5"
+                            android:layout_gravity="center"
+                            android:textColor="@color/gray"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_gravity="end"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:onClick="onRoomSelect"
+                        android:layout_columnWeight="1"
+                        android:id="@+id/l6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:background="@drawable/button_circle_gray"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="15dp"
+                            android:id="@+id/img6"
+                            android:onClick="onRoomSelect"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_10"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Зал"
+                            android:id="@+id/txt6"
+                            android:layout_gravity="center"
+                            android:textColor="@color/gray"/>
+                    </LinearLayout>
+
+
+                </GridLayout>
+                <Button
+                    android:id="@+id/saveAddRoom"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="50dp"
+
+                    android:layout_height="55dp"
+                    android:background="@drawable/btn_save_red"
+                    android:backgroundTint="@color/blue"
+                    android:text="Coхранить"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
